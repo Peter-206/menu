@@ -13,7 +13,8 @@
     "generate:qr": "node scripts/generate-qr.mjs"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.58.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
