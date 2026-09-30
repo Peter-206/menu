@@ -81,7 +81,7 @@ input:focus-visible {
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.25rem;
   padding-bottom: clamp(22px, 2vw, 40px);
   border-bottom: 1px solid #565146;
 }
@@ -93,7 +93,7 @@ input:focus-visible {
   display: grid;
   place-items: center;
   color: #d1ad68;
-  font-size: 2rem;
+  font-size: 1.25rem;
   flex: none;
 }
 .brand-copy h1 {
