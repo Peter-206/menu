@@ -5,7 +5,7 @@ import {isPreview} from './availability';
 import {useAvailability} from './useAvailability';
 import './styles.css';
 
-const pageSize = 6;
+const pageSize = 8;
 
 function makeSlides(drinks: Drink[]): { category: string; drinks: Drink[] }[] {
     return categories.flatMap((category) => {
@@ -32,7 +32,7 @@ function Menu() {
 
     useEffect(() => {
         if (paused || slides.length < 2 || loading || error) return;
-        const timer = window.setInterval(() => setSlideIndex((index) => (index + 1) % slides.length), 15_000);
+        const timer = window.setInterval(() => setSlideIndex((index) => (index + 1) % slides.length), 1_000);
         return () => window.clearInterval(timer);
     }, [paused, slides.length, loading, error]);
 
